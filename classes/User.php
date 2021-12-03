@@ -4,6 +4,7 @@ class User
 {
   protected $name;
   protected $surname;
+  protected $age;
   protected $email;
   protected $password;
 
@@ -11,14 +12,12 @@ class User
   {
     $this->setUserName($_userArray["name"]);
     $this->setUserSurname($_userArray["surname"]);
+    $this->setUserAge($_userArray["age"]);
     $this->setUserEmail($_userArray["email"]);
     $this->setUserPassword($_userArray["password"]);
   }
 
-  public function getUserName()
-  {
-    return $this->name;
-  }
+
 
   public function setUserName(string $name)
   {
@@ -26,10 +25,6 @@ class User
   }
 
 
-  public function getUserSurname()
-  {
-    return $this->surname;
-  }
 
   public function setUserSurname(string $surname)
   {
@@ -37,21 +32,17 @@ class User
   }
 
 
-  public function getUserEmail()
+  public function setUserAge(string $age)
   {
-    return $this->email;
+    $this->age = $age;
   }
+
 
   public function setUserEmail(string $email)
   {
     $this->email = $email;
   }
 
-
-  public function getUserPassword()
-  {
-    return $this->password;
-  }
 
   public function setUserPassword(string $password)
   {
