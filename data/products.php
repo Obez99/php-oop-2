@@ -2,7 +2,7 @@
 $products = [
   [
     "name" => "Apple",
-    "brand" => "",
+    "brand" => "PinkLady",
     "category" => "Food",
     "price" => 1
   ],
@@ -20,9 +20,9 @@ $products = [
   ],
   [
     "name" => "Chair",
-    "brand" => "",
+    "brand" => "BlitzWolf",
     "category" => "Furniture",
-    "price" => 9
+    "price" => 89
   ],
   [
     "name" => "Shaving Cream",
@@ -44,13 +44,13 @@ $products = [
   ],
   [
     "name" => "Face mask",
-    "brand" => "",
+    "brand" => "Egook",
     "category" => "Selfcare",
-    "price" => 5
+    "price" => 2
   ],
   [
     "name" => "Bed",
-    "brand" => "",
+    "brand" => "Poltronesofà",
     "category" => "Furniture",
     "price" => 299
   ],
