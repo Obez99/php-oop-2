@@ -1,5 +1,5 @@
 <?php
-$products = [
+$productsData = [
   [
     "name" => "Apple",
     "brand" => "PinkLady",
