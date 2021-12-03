@@ -9,51 +9,51 @@ class User
 
   function __construct($_userArray)
   {
-    $this->setName($_userArray["name"]);
-    $this->setSurname($_userArray["surname"]);
-    $this->setEmail($_userArray["email"]);
-    $this->setPassword($_userArray["password"]);
+    $this->setUserName($_userArray["name"]);
+    $this->setUserSurname($_userArray["surname"]);
+    $this->setUserEmail($_userArray["email"]);
+    $this->setUserPassword($_userArray["password"]);
   }
 
-  public function getName()
+  public function getUserName()
   {
     return $this->name;
   }
 
-  public function setName($name)
+  public function setUserName(string $name)
   {
     $this->name = $name;
   }
 
 
-  public function getSurname()
+  public function getUserSurname()
   {
     return $this->surname;
   }
 
-  public function setSurname($surname)
+  public function setUserSurname(string $surname)
   {
     $this->surname = $surname;
   }
 
 
-  public function getEmail()
+  public function getUserEmail()
   {
     return $this->email;
   }
 
-  public function setEmail($email)
+  public function setUserEmail(string $email)
   {
     $this->email = $email;
   }
 
 
-  public function getPassword()
+  public function getUserPassword()
   {
     return $this->password;
   }
 
-  public function setPAssword($password)
+  public function setUserPassword(string $password)
   {
     $this->password = $password;
   }
