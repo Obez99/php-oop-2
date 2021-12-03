@@ -1,38 +1,45 @@
 <?php
 $users = [
   [
-    "nome" => "Giulio",
-    "cognome" => "Gulizia",
-    "email" => "giuliogulizia@gmail.com"
+    "name" => "Giulio",
+    "surname" => "Gulizia",
+    "email" => "giuliogulizia@gmail.com",
+    "password" => "nonsipuòdire(:"
   ],
   [
-    "nome" => "Case",
-    "cognome" => "Wall",
-    "email" => "case_wall@icloud.com"
+    "name" => "Case",
+    "surname" => "Wall",
+    "email" => "case_wall@icloud.com",
+    "password" => "hello123"
   ],
   [
-    "nome" => "Meredith",
-    "cognome" => "Chen",
-    "email" => "meredith8829@gmail.com"
+    "name" => "Meredith",
+    "surname" => "Chen",
+    "email" => "meredith8829@gmail.com",
+    "password" => "koqf89u3803fskp"
   ],
   [
-    "nome" => "Johnny",
-    "cognome" => "Benjamin",
-    "email" => "BenJohnny@gmail.com"
+    "name" => "Johnny",
+    "surname" => "Benjamin",
+    "email" => "BenJohnny@gmail.com",
+    "password" => "johnny123"
   ],
   [
-    "nome" => "Beatrice",
-    "cognome" => "Crane",
-    "email" => "beatricecrane@icloud.com"
+    "name" => "Beatrice",
+    "surname" => "Crane",
+    "email" => "beatricecrane@icloud.com",
+    "password" => "_supersecretpassword_"
   ],
   [
-    "nome" => "Danna",
-    "cognome" => "Weber",
-    "email" => "danna92@hotmail.com"
+    "name" => "Danna",
+    "surname" => "Weber",
+    "email" => "danna92@hotmail.com",
+    "password" => "letsbuyeverything"
   ],
   [
-    "nome" => "Bernard",
-    "cognome" => "Walsh",
-    "email" => "bernardwalsh@gmail.com"
+    "name" => "Bernard",
+    "surname" => "Walsh",
+    "email" => "bernardwalsh@gmail.com",
+    "password" => "235720124790"
   ],
 ];
