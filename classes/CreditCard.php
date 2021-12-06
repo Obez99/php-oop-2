@@ -2,7 +2,7 @@
 
 class CreditCard
 {
-  protected $creditCardNumber;
+  protected $creditCardNumber = "Invalid Credit Card Number";
   protected $cvv;
   protected $expireDate;
 
@@ -15,6 +15,9 @@ class CreditCard
 
   public function setCardNumber($creditCardNumber)
   {
+    if (strlen($creditCardNumber) != 16) {
+      return;
+    }
     $this->creditCardNumber = $creditCardNumber;
   }
 
