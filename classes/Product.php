@@ -44,9 +44,8 @@ class Product
     $this->price = $price;
   }
 
-  public function getSingleProduct($id)
+  public function getSingleProduct()
   {
-    if ($this->id === $id)
-      return $this;
+    return $this;
   }
 }

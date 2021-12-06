@@ -24,14 +24,16 @@ foreach ($usersData as $user) {
 foreach ($productsData as $key => $product) {
   $product = new Product($product, $key);
   array_push($products, $product);
-  var_dump($product->getSingleProduct(4));
 }
 
 
 
 
 echo "<h2>Users</h2>";
-var_dump($users);
+$users[0]->addToCart($products[2]->getSingleProduct());
+$users[0]->addToCart($products[1]->getSingleProduct());
+var_dump($users[0]->getUserData());
+
 
 ?>
 

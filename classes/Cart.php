@@ -4,7 +4,7 @@ class Cart
 {
   protected $cartItems = [];
 
-  public function setCartData()
+  public function setCartItems()
   {
   }
 }

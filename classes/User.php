@@ -7,6 +7,7 @@ class User
   protected $age;
   protected $email;
   protected $password;
+  protected $cart;
 
   function __construct($_userArray)
   {
@@ -15,6 +16,7 @@ class User
     $this->setUserAge($_userArray["age"]);
     $this->setUserEmail($_userArray["email"]);
     $this->setUserPassword($_userArray["password"]);
+    $this->setUserCart($_userArray["cart"]);
   }
 
 
@@ -52,5 +54,20 @@ class User
   public function setUserPassword(string $password)
   {
     $this->password = $password;
+  }
+
+  public function setUserCart($cart)
+  {
+    $this->cart = $cart;
+  }
+
+  public function getUserData()
+  {
+    return $this;
+  }
+
+  public function addToCart($item)
+  {
+    array_push($this->cart, $item);
   }
 }
