@@ -3,16 +3,14 @@
 require_once __DIR__ . "/User.php";
 class PremiumUser extends User
 {
-  protected $premiumDiscount;
 
-  function __construct($_userArray, $premiumDiscount = 0)
+  function __construct($_userArray)
   {
     parent::__construct($_userArray);
-    $this->setPremiumDiscount(10);
+    $this->setPremiumDiscount();
   }
 
-  public function setPremiumDiscount($_premiumDiscount)
+  public function setPremiumDiscount()
   {
-    $this->premiumDiscount = $_premiumDiscount;
   }
 }

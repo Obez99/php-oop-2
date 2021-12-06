@@ -8,6 +8,7 @@ class User
   protected $email;
   protected $password;
   protected $cart;
+  protected $creditCards;
 
   function __construct($_userArray)
   {
@@ -69,5 +70,15 @@ class User
   public function addToCart($item)
   {
     array_push($this->cart, $item);
+  }
+  public function getCartItems()
+  {
+    return $this->cart;
+  }
+
+  public function addCreditCard($number, $cvv, $expire)
+  {
+    $creditCard = new CreditCard($number, $cvv, $expire);
+    $this->creditCards[] = $creditCard;
   }
 }

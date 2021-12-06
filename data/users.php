@@ -7,7 +7,8 @@ $usersData = [
     "email" => "giuliogulizia@gmail.com",
     "password" => "nonsipuòdire(:",
     "cart" => [],
-    "isPremium" => true
+    "isPremium" => true,
+    "creditCards" => []
   ],
   [
     "name" => "Case",
@@ -16,7 +17,8 @@ $usersData = [
     "email" => "case_wall@icloud.com",
     "password" => "hello123",
     "cart" => [],
-    "isPremium" => false
+    "isPremium" => false,
+    "creditCards" => []
   ],
   [
     "name" => "Meredith",
@@ -25,7 +27,8 @@ $usersData = [
     "email" => "meredith8829@gmail.com",
     "password" => "koqf89u3803fskp",
     "cart" => [],
-    "isPremium" => false
+    "isPremium" => false,
+    "creditCards" => []
   ],
   [
     "name" => "Johnny",
@@ -34,7 +37,8 @@ $usersData = [
     "email" => "BenJohnny@gmail.com",
     "password" => "johnny123",
     "cart" => [],
-    "isPremium" => false
+    "isPremium" => false,
+    "creditCards" => []
   ],
   [
     "name" => "Beatrice",
@@ -43,7 +47,8 @@ $usersData = [
     "email" => "beatricecrane@icloud.com",
     "password" => "_supersecretpassword_",
     "cart" => [],
-    "isPremium" => true
+    "isPremium" => true,
+    "creditCards" => []
   ],
   [
     "name" => "Danna",
@@ -52,7 +57,8 @@ $usersData = [
     "email" => "danna92@hotmail.com",
     "password" => "letsbuyeverything",
     "cart" => [],
-    "isPremium" => false
+    "isPremium" => false,
+    "creditCards" => []
   ],
   [
     "name" => "Bernard",
@@ -61,6 +67,7 @@ $usersData = [
     "email" => "bernardwalsh@gmail.com",
     "password" => "235720124790",
     "cart" => [],
-    "isPremium" => true
+    "isPremium" => true,
+    "creditCards" => []
   ],
 ];

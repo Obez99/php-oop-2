@@ -6,7 +6,7 @@ class Product
   protected $name;
   protected $brand;
   protected $category;
-  protected $price;
+  protected float $price;
 
   function __construct($_productArray, $_key)
   {

@@ -3,8 +3,9 @@
 require_once "data/products.php";
 require_once "data/users.php";
 
-require "classes/Product.php";
-require "classes/PremiumUser.php";
+require_once "classes/Product.php";
+require_once "classes/PremiumUser.php";
+require_once "classes/CreditCard.php";
 
 
 $users = [];
@@ -26,15 +27,19 @@ foreach ($productsData as $key => $product) {
   array_push($products, $product);
 }
 
-
+echo "<body style='background-color:black; color:white'>";
 
 
 echo "<h2>Users</h2>";
 $users[0]->addToCart($products[2]->getSingleProduct());
 $users[0]->addToCart($products[1]->getSingleProduct());
+$users[0]->addCreditCard(40252123023791, 493, "06/2023");
+$users[0]->addCreditCard(40252123023791, 493, "06/2023");
 var_dump($users[0]->getUserData());
+var_dump($users);
+var_dump($products);
 
-
+echo "</body>";
 ?>
 
 
