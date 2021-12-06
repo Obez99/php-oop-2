@@ -43,6 +43,11 @@ class User
     $this->email = $email;
   }
 
+  public function getUserEmail()
+  {
+    return $this->email;
+  }
+
 
   public function setUserPassword(string $password)
   {

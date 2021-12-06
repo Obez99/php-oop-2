@@ -60,4 +60,5 @@ $productsData = [
     "category" => "Food",
     "price" => 1
   ],
+
 ];
