@@ -33,8 +33,15 @@ echo "<body style='background-color:black; color:white'>";
 echo "<h2>Users</h2>";
 $users[0]->addToCart($products[2]->getSingleProduct());
 $users[0]->addToCart($products[1]->getSingleProduct());
+
+//Valid Credit Card
 $users[0]->addCreditCard(4025212302379121, 493, "06/2023");
-$users[0]->addCreditCard(40252123023791, 493, "06/2023");
+
+//Invalid Credit Card
+$users[0]->addCreditCard(40252123023791, 93, "062023");
+
+
+
 var_dump($users[0]->getUserData());
 var_dump($users);
 var_dump($products);

@@ -2,11 +2,11 @@
 
 class User
 {
-  protected $name;
-  protected $surname;
-  protected $age;
-  protected $email;
-  protected $password;
+  private $name;
+  private $surname;
+  private $age;
+  private $email;
+  private $password;
   protected $cart;
   protected $creditCards;
 
