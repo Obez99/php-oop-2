@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . "/../traits/CreditCardTrait.php";
+
 class User
 {
   protected $name;
@@ -8,7 +10,9 @@ class User
   private $email;
   private $password;
   protected $cart;
-  protected $creditCards;
+
+  use CreditCardTrait;
+
 
   function __construct($_userArray)
   {
@@ -74,15 +78,5 @@ class User
   public function getCartItems()
   {
     return $this->cart;
-  }
-
-  public function addCreditCard($number, $cvv, $expire)
-  {
-    try {
-      $creditCard = new CreditCard($number, $cvv, $expire);
-      $this->creditCards[] = $creditCard;
-    } catch (Exception $e) {
-      echo $e->getMessage() . " for user " . $this->name;
-    }
   }
 }

@@ -25,7 +25,7 @@ class CreditCard
   public function setCardCvv($cvv)
   {
     if (strlen($cvv) != 3 || !is_int($cvv)) {
-      return;
+      throw new Exception("Invalid CVV Number");
     }
     $this->cvv = $cvv;
   }
@@ -33,7 +33,7 @@ class CreditCard
   public function setCardExpireDate($expireDate)
   {
     if (!strpos($expireDate, "/") && strlen($expireDate) != 7) {
-      return;
+      throw new Exception("Invalid Card Expiration Date");
     }
     $this->expireDate = $expireDate;
   }
