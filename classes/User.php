@@ -82,7 +82,7 @@ class User
       $creditCard = new CreditCard($number, $cvv, $expire);
       $this->creditCards[] = $creditCard;
     } catch (Exception $e) {
-      echo $e->getMessage();
+      echo $e->getMessage() . " for user " . $this->name;
     }
   }
 }
