@@ -43,7 +43,11 @@ $users[0]->addCreditCard(40252123023791, 93, "062023");
 
 
 var_dump($users[0]->getUserData());
+
+echo "<h2> Users </h2>";
 var_dump($users);
+
+echo "<h2>Products</h2>";
 var_dump($products);
 
 echo "</body>";

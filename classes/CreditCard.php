@@ -16,8 +16,9 @@ class CreditCard
   public function setCardNumber($creditCardNumber)
   {
     if (strlen($creditCardNumber) != 16 || !is_int($creditCardNumber)) {
-      return;
+      throw new Exception("Invalid Credit Card Number");
     }
+
     $this->creditCardNumber = $creditCardNumber;
   }
 

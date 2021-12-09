@@ -2,7 +2,7 @@
 
 class User
 {
-  private $name;
+  protected $name;
   private $surname;
   private $age;
   private $email;
@@ -78,7 +78,11 @@ class User
 
   public function addCreditCard($number, $cvv, $expire)
   {
-    $creditCard = new CreditCard($number, $cvv, $expire);
-    $this->creditCards[] = $creditCard;
+    try {
+      $creditCard = new CreditCard($number, $cvv, $expire);
+      $this->creditCards[] = $creditCard;
+    } catch (Exception $e) {
+      echo $e->getMessage();
+    }
   }
 }
