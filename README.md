@@ -18,7 +18,7 @@ This is the recreation of an online shop using **Object Oriented Programming**.<
 Each user can add products in their cart and credit cards.<br>
 If the user has the PremiumUser class gets a premium discount.
 
-(**The credit card information is obviously fake**)
+**The credit card informations are obviously fake :)**
 ## Screenshots
 
 ![oop2](https://user-images.githubusercontent.com/85038274/151710603-a865fd48-ba13-4d8f-9355-6cc8379d7c25.PNG)
